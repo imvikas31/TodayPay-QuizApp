@@ -1,0 +1,19 @@
+@import "tailwindcss";
+/* small custom animation used by QuestionCard */
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 280ms ease-out both;
+}
+
+/* larger clickable focus ring for accessibility */
+:focus {
+  outline: none;
+}
+.focus-ring {
+  box-shadow: 0 0 0 4px rgba(59,130,246,0.12);
+  border-radius: 0.5rem;
+}
